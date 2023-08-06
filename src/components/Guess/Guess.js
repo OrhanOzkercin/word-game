@@ -1,7 +1,7 @@
 import React from "react";
 import { checkGuess } from "../../game-helpers";
 
-function Guess({ guess, answer }) {
+function Guess({ guess, answer, setStatus }) {
   if (guess) {
     const guessObj = checkGuess(guess, answer);
 
