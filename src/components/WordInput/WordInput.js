@@ -15,6 +15,7 @@ function WordInput({ onGuessSubmit }) {
         required
         maxLength={5}
         minLength={5}
+        pattern="[a-zA-Z]{5}"
         value={guess}
         onChange={(e) => setGuess(e.target.value.toUpperCase())}
         id="guess-input"
